@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Plan</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px; /* Adjust margin as needed */
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            border: 5px solid #000; /* Solid black border with 5px width */
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2; /* Light gray background for header */
+        }
+        .stars {
+            color: #f2d024; /* Yellow color for stars */
+            unicode-bidi: bidi-override;
+            font-size: 20px;
+        }
+        .stars::before {
+            content: "★★★★★";
+            letter-spacing: 3px;
+            position: absolute;
+        }
+        .stars-outline {
+            color: #ccc; /* Color for outlined stars */
+        }
+        .stars-outline::before {
+            content: "★★★★★";
+            letter-spacing: 3px;
+            position: absolute;
+            -webkit-text-stroke: 1px #ccc; /* Outline for stars */
+            -webkit-text-fill-color: transparent; /* Transparent fill for outlined stars */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="mb-4">Travel Plan</h1>
+
+    <!-- Display Travel Preferences -->
+    <div class="mb-4">
+        <h2>Travel Preferences</h2>
+        <table>
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Destination</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Budget</td>
+                <td>$5000</td>
+            </tr>
+            <tr>
+                <td>Number of Travelers</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Number of Female Travelers</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Display List of Recommended Restaurants -->
+    <div class="mb-4">
+        <h2>List of Recommended Restaurants</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Restaurant A</td>
+                <td>Paris</td>
+                <td>
+                    <span class="stars">
+                        <span class="stars-outline">4</span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>Restaurant B</td>
+                <td>Nice</td>
+                <td>
+                    <span class="stars">
+                        <span class="stars-outline">3</span>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>Restaurant C</td>
+                <td>Lyon</td>
+                <td>
+                    <span class="stars">
+                        <span class="stars-outline">5</span>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Display Recommended Hotel -->
+    <div class="mb-4">
+        <h2>Recommended Hotel</h2>
+        <p>Name: Sample Hotel</p>
+        <p>Location: Sample Location</p>
+    </div>
+
+    <!-- Display Laws and Crime Records -->
+    <div class="mb-4">
+        <h2>Laws and Crime Records</h2>
+        <p>Laws: Sample laws and regulations</p>
+        <p>Crime Records: Sample crime records</p>
+        <p>Top Crimes: Sample top crimes</p>
+    </div>
+
+</div>
+
+</body>
+</html>
